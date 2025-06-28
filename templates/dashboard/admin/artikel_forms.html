@@ -21,7 +21,7 @@
         <h6 class="mb-0">Form artikel</h6>
       </div>
       <div class="card-body pt-2">
-        <form method="POST" enctype="multipart/form-data">
+        <form method="POST" enctype="multipart/form-data" novalidate >
           {% csrf_token %}
 
           <div class="input-group input-group-outline {% if forms.judul.value %}is-filled{% endif %} my-3">
@@ -57,6 +57,7 @@
   </div>
 </div>
 {% endblock %}
+
 
 {% block js %}
 <script src="{% static 'dashboard/assets/js/plugins/choices.min.js' %}"></script>

@@ -21,6 +21,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <!-- CSS Files -->
   <link id="pagestyle" href="{% static 'dashboard/assets/css/material-dashboard.css' %}?v=3.0.1" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
   {% block css %}
 
@@ -152,6 +153,17 @@
     </nav>
     <!-- End Navbar -->
     <div class="container-fluid py-4">
+      {% if messages %}
+          {% for message in messages %}
+            <div class="alert {{ message.tags }} alert-dismissible text-white" role="alert">
+              <span class="text-sm">{{ message }}</span>
+              <button type="button" class="btn-close text-lg py-3 opacity-10" data-bs-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          {% endfor %}
+      {% endif %}
+
       {% block content %}
 
       {% endblock %}
