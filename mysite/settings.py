@@ -88,11 +88,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default':{
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'artikel_blog',
+        'NAME': 'railway',
         'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost', 
-        'PORT': '3306'
+        'PASSWORD': 'XIZYApWGAHkjRWbQHYzlznttjUMJCuAP',
+        'HOST': 'centerbeam.proxy.rlwy.net', 
+        'PORT': '25392'
     }
 }
 
