@@ -1,7 +1,7 @@
 import os
 import pymysql
-pymysql.install_as_MySQLdb()
-from pathlib import Path
+# pymysql.install_as_MySQLdb()
+# from pathlib import Path
 
 from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
