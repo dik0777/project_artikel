@@ -1,6 +1,6 @@
 import os
-# import pymysql
-# pymysql.install_as_MySQLdb()
+import pymysql
+pymysql.install_as_MySQLdb()
 from pathlib import Path
 
 from django.contrib.messages import constants as messages
